@@ -1,0 +1,18 @@
+#page04 {
+  display: flex;
+  background-color: rgb(27, 0, 21);
+
+  .half-screen {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    @include tempBorder(pink);
+  }
+  .text-block {
+    margin-top: 40vh;
+  }
+  .btn-group {
+    margin-top: 80vh;
+    @include tempBorder(blue);
+  }
+}

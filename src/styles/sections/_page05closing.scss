@@ -1,0 +1,107 @@
+#page05closing {
+  background-color: rgb(0, 43, 11);
+
+  .steps {
+    width: 80%;
+    height: 100%;
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    @include tempBorder(pink);
+
+    @media only screen and (max-width: 800px) {
+      width: 90%;
+      height: 100%;
+      flex-direction: column;
+    }
+  }
+
+  .step {
+    background-color: rgb(1, 59, 55);
+    padding: 0 20px;
+    counter-increment: section;
+    width: 17%;
+    @include tempBorder(red);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media only screen and (max-width: 800px) {
+      width: 90%;
+      height: 100%;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+
+    &:last-of-type {
+      width: 34%;
+      border: 1px solid $yellow_c;
+      font-size: 1.3rem;
+      font-weight: 400;
+
+      @media only screen and (max-width: 800px) {
+        width: 90%;
+        height: 100%;
+      }
+    }
+
+    &__num {
+      margin-top: 100px;
+      width: 20px;
+      height: 20px;
+      background-color: $yellow_c;
+      font-size: 0.7rem;
+      position: relative;
+
+      @media only screen and (max-width: 800px) {
+        margin-top: -10px;
+        margin-right: 3%;
+      }
+
+      &::after {
+        content: counter(section);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+      }
+    }
+    &__title {
+      margin-top: 50px;
+      height: 80px;
+      text-align: center;
+    }
+    &__list {
+      list-style-type: disc;
+      align-self: flex-start;
+      line-height: 2;
+      padding: 0 5%;
+
+      @media only screen and (max-width: 800px) {
+        align-self: center;
+        margin-left: 5%;
+      }
+    }
+    &__item {
+      position: relative;
+      width: 200px;
+      font-size: 0.7rem;
+    }
+
+    .calendar {
+      position: absolute;
+      display: block;
+      width: 80%;
+      height: 100px;
+      margin: 0 20px;
+      top: -20%;
+      border: 1px solid $yellow_c;
+
+      @media only screen and (max-width: 800px) {
+        margin: 0;
+        top: -100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@mixin tempBorder($color) {
+  box-shadow: inset 0px 0px 0px 1px $color;
+}
+
+@mixin animate {
+  animation: fadein 1.5s;
+  animation-timing-function: ease-out;
+}

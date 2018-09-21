@@ -1,0 +1,40 @@
+#page05tellMore {
+  background-color: rgb(37, 0, 0);
+
+  .tellMore-title {
+    @include tempBorder(blue);
+    margin: 40px 50px;
+    text-align: center;
+  }
+
+  .form-tellMore {
+    font-size: 0.7rem;
+    @include tempBorder(purple);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+
+    input {
+      width: 100%;
+      height: 30px;
+      background-color: transparent;
+      border: 1px solid $white_c;
+      border-radius: 3px;
+      margin: 10px 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .halfinput {
+      width: 47%;
+      padding-left: 10px;
+    }
+
+    .container {
+      margin: 20px auto;
+    }
+  }
+}

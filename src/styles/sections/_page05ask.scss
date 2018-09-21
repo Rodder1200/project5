@@ -1,0 +1,50 @@
+#page05ask {
+  background-color: rgb(0, 19, 34);
+
+  .form-ask {
+    font-size: 0.7rem;
+    @include tempBorder(purple);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20%;
+
+    input[name="asking_price"] {
+      width: 55%;
+      height: 30px;
+      background-color: transparent;
+      border: 1px solid $white_c;
+      border-radius: 3px;
+      margin: 10px 0;
+    }
+
+    .attach {
+      background-color: transparent;
+      width: 55%;
+      height: 30px;
+      margin: 10px 0;
+      border: 1px solid grey;
+      border-radius: 3px;
+      color: grey;
+      font-size: 0.6rem;
+
+      &:hover {
+        background-color: grey;
+        color: $white_c;
+      }
+    }
+
+    textarea {
+      background-color: transparent;
+      width: 100%;
+      height: 70px;
+      margin: 10px 0;
+      border-radius: 3px;
+      resize: none;
+    }
+
+    a {
+      margin: 0 auto;
+    }
+  }
+}

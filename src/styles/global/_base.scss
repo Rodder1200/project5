@@ -1,0 +1,29 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: $white_c;
+  background-color: rgb(24, 24, 24);
+  text-overflow: ellipsis;
+  // animation: fadein 2s;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $white_c;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

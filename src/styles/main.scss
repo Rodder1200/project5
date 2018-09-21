@@ -1,0 +1,26 @@
+@import "../../node_modules/normalize.scss/normalize.scss";
+@import "../../node_modules/font-awesome/scss/font-awesome.scss";
+
+// @import "global/_fonts";
+@import "global/_vars";
+@import "global/_mixins";
+@import "global/_base";
+@import "global/_animation";
+
+@import "sections/_header";
+@import "sections/_nav";
+@import "sections/_pageSwitcher";
+@import "sections/_textBlock";
+@import "sections/_footer";
+@import "sections/_heroBlock";
+@import "sections/_page";
+@import "sections/_page01";
+@import "sections/_page03";
+@import "sections/_page04";
+@import "sections/_page05ask";
+@import "sections/_page05tellMore";
+@import "sections/_page05closing";
+@import "sections/_pageProcess";
+@import "sections/_page07";
+@import "sections/_page08";
+@import "sections/_btn";

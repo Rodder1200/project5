@@ -1,0 +1,28 @@
+header {
+  position: fixed;
+  width: 100%;
+  top: 5%;
+  @include animate;
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include tempBorder(red);
+  }
+  .logo {
+    font-size: 1.5rem;
+    &__title {
+      display: inline-block;
+    }
+    &__img {
+      display: inline-block;
+    }
+  }
+  .search {
+    margin-left: 50px;
+    cursor: pointer;
+  }
+}

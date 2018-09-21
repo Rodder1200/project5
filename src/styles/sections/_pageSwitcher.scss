@@ -1,0 +1,33 @@
+.pageSwitcher {
+  position: fixed;
+  top: 25%;
+  left: 92%;
+  @include tempBorder(red);
+  @include animate;
+
+  ul {
+    padding: 0;
+  }
+  .switchedPage {
+    width: 30px;
+    height: 30px;
+    font-size: 0.7rem;
+    position: relative;
+    counter-increment: section;
+
+    span {
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      position: absolute;
+    }
+
+    &__active {
+      background-color: $yellow_c;
+    }
+
+    &__hidden {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.hero-block {
+  display: block;
+  width: 300px;
+  height: 100px;
+  text-align: center;
+  @include tempBorder(red);
+
+  &__title {
+    margin: 0;
+    font-size: 3rem;
+    span {
+      color: $yellow_c;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-size: 0.7rem;
+    font-weight: 400;
+  }
+}
